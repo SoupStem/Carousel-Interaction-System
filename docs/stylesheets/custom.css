@@ -1,0 +1,52 @@
+/* ========================= */
+/* FOOTER GENERAL STYLING    */
+/* ========================= */
+
+/* Footer layout wrapper */
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* helps on smaller screens */
+  padding: 0.6em 1.2em;
+  font-size: 0.55rem;
+  color: var(--footer-text);
+}
+
+/* Left text element */
+.footer-left {
+  margin: 0;
+}
+
+/* Right-side container (can be used for future links or info) */
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75em;
+  flex: 1;
+}
+
+/* ========================= */
+/* COLOR THEMES (LIGHT/DARK) */
+/* ========================= */
+
+/* Light theme overrides */
+[data-md-color-scheme="default"] {
+  --footer-bg: #E0F2F1;
+  --footer-border: #B2DFDB;
+  --footer-text: #333;
+}
+
+/* Dark theme overrides */
+[data-md-color-scheme="slate"] {
+  --footer-bg: #1A1A1A;
+  --footer-border: #333;
+  --footer-text: #E0E0E0;
+}
+
+/* Footer background & border */
+.md-footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--footer-border);
+}

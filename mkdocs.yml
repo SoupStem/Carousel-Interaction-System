@@ -1,0 +1,56 @@
+site_name: Carousel Interaction System Plugin Documentation
+site_url: https://sitename.example
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/empty.svg
+
+  # Material theme features enabled
+  features:
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+
+  language: en
+
+  # Light/Dark color palettes
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: light blue
+
+nav:
+  - Welcome: index.md
+  - Initial Settings: initial-settings.md
+  - Components: components.md
+  - Data Assets: data-assets.md
+  - Data Table: data-table.md
+  - Collectables: collectables.md
+  - Player Controller: player-controller.md
+  - To Recap: recap.md
+  - Considerations: considerations.md
+
+# Custom stylesheet
+extra_css:
+  - stylesheets/custom.css
+
+extra:
+  # Footer copyright text
+  copyright: >
+    Copyright © 2025 Soup Stem – All rights reserved.

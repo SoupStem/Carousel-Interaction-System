@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block footer %}
+  <footer class="md-footer">
+    <div class="md-footer-meta footer-flex">
+
+      <!-- Left copyright text -->
+      <p class="footer-left">
+        {{ config.extra.copyright | safe }}
+      </p>
+
+      <!-- Right section (currently empty, reserved for future content) -->
+      <div class="footer-right"></div>
+
+    </div>
+  </footer>
+{% endblock %}
