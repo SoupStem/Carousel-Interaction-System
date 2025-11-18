@@ -4,12 +4,9 @@ For both the Interaction and Inventory systems to function correctly, your game 
 
 This component is crucial as it handles all necessary input binding and widget management for the plugin.
 
-**Player Controller Integration Options**
+**Player Controller Integration Option**
 
-You have two primary ways to set this up:
-
-1. **Use the Example:** Utilize the pre-configured example Player Controller included in the plugin content folder: ***BP_InventoryPlayerController***.
-2. **Create New:** Create a new Blueprint Player Controller that inherits directly from the base ***InventoryPlayerController*** class.
+**Create New:** Create a new Blueprint Player Controller that inherits directly from the base ***InventoryPlayerController*** class.
 
 **The Role of InventoryPlayerController**
 

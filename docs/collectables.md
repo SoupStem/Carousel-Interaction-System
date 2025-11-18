@@ -2,14 +2,11 @@
 
 The next step is to introduce interactive objects (collectables or pickups) into your game world. The plugin provides a base class and example actors to streamline this process.
 
-**Item Creation Options**
+**Item Creation Option**
 
-The plugin includes two example actors, ***BP_Collectable*** and ***BP_Interaction***, both inheriting from the base class ***InventoryInteractionItem***. You have two options for creating your pickups:
+**Create New Actor:** Create a new Blueprint Actor that inherits from the ***InventoryInteractionItem*** class.
 
-1. **Use Examples Directly:** Utilize the provided example actors.
-2. **Create New Actor:** Create a new Blueprint Actor that inherits from the ***InventoryInteractionItem*** class.
-
-    **Efficiency Note:** You do not need to create a new unique Actor class for every single item. You can simply place one Collectable Actor in the world, configure its properties, and then **duplicate** it for new items, changing only the necessary settings.
+    Efficiency Note: You do not need to create a new unique Actor class for every single item. You can simply place one Collectable Actor in the world, configure its properties, and then duplicate it for new items, changing only the necessary settings.
 
 Core Interaction Settings
 
