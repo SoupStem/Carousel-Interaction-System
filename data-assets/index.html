@@ -1,0 +1,749 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sitename.example/data-assets/">
+      
+      
+        <link rel="prev" href="../components/">
+      
+      
+        <link rel="next" href="../data-table/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Data Assets - Carousel Interaction System Plugin Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-assets-configuration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Carousel Interaction System Plugin Documentation" class="md-header__button md-logo" aria-label="Carousel Interaction System Plugin Documentation" data-md-component="logo">
+      
+  <img src="../assets/empty.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Carousel Interaction System Plugin Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Assets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Carousel Interaction System Plugin Documentation" class="md-nav__button md-logo" aria-label="Carousel Interaction System Plugin Documentation" data-md-component="logo">
+      
+  <img src="../assets/empty.svg" alt="logo">
+
+    </a>
+    Carousel Interaction System Plugin Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initial-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Initial Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Assets
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-assets-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Assets Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-interaction-data-asset-interactiondataasset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Interaction Data Asset (InteractionDataAsset)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-inventory-data-asset-inventorydataasset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Inventory Data Asset (InventoryDataAsset)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configuring-the-interaction-data-asset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Configuring the Interaction Data Asset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuring-the-inventory-data-asset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuring the Inventory Data Asset
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-table/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Table
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collectables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collectables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../player-controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Controller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    To Recap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../considerations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Considerations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Data Assets</h1>
+
+<h2 id="data-assets-configuration"><strong>Data Assets Configuration</strong></h2>
+<p>The plugin utilizes specific <strong>Data Assets</strong> to centralize and manage configuration values for interaction and inventory systems. These assets are crucial for defining default behaviors and linking necessary classes.</p>
+<p><img alt="alt text" src="../assets/prt_6.png" /></p>
+<h2 id="1-interaction-data-asset-interactiondataasset"><strong>1. Interaction Data Asset (InteractionDataAsset)</strong></h2>
+<p>This Data Asset is <strong>essential</strong> for configuring the core values of the interaction system and specifying the rendering environment.</p>
+<ul>
+<li><strong>Interaction Configuration Values</strong> - Defines parameters such as interaction distance, delay times, and display text defaults. - Allows designers to tune the feel of interactions globally without modifying code.</li>
+<li><strong>Scene Class Reference</strong> - <strong>Crucial:</strong> Used to set the Scene Class responsible for rendering the inventory items, typically involving a <strong>Scene Capture Component</strong>. - This link is mandatory for the <strong>Inventory Carousel</strong> to correctly visualize the items.</li>
+</ul>
+<h2 id="2-inventory-data-asset-inventorydataasset"><strong>2. Inventory Data Asset (InventoryDataAsset)</strong></h2>
+<p>The <strong>Inventory Data Asset</strong> serves as the core structure and blueprint for every single item in your game.</p>
+<ul>
+<li><strong>Function:</strong> This asset is the nucleus of item definition. For every new item created in the game (e.g., a Pistol, a Health Pack, or a Key), a corresponding, new Inventory Data Asset instance must be created.</li>
+<li><strong>Structure:</strong> It contains the entire item structure, including properties such as:<ul>
+<li>Display Name and Description</li>
+<li>Item Model/Mesh Reference</li>
+<li>Item tag and Name</li>
+<li>Location, Rotation and Size (Local and World) space</li>
+</ul>
+</li>
+</ul>
+<p>By making each item an instance of the Inventory Data Asset, the system achieves a highly organized and scalable method for managing the entire inventory database.</p>
+<h2 id="3-configuring-the-interaction-data-asset"><strong>3. Configuring the Interaction Data Asset</strong></h2>
+<p>Let's focus on the initial setup required for the core interaction system: creating and naming the <strong>Interaction Data Asset</strong>.</p>
+<p><strong>Step 1: Creating the Asset</strong></p>
+<pre><code>1. Open the Content Browser.
+2. Right-Click anywhere in an empty area.
+3. Navigate to Miscellaneous.
+4. Select Data Asset.
+5. In the pop-up window, locate and select the Interaction Data Asset class.
+</code></pre>
+<p><strong>Step 2: Naming the Asset</strong></p>
+<p>Once the asset is created, you must rename it:</p>
+<ul>
+<li><strong>Rename:</strong> Give the asset a clear, recognizable name, such as <strong>DA_PlayerInteractions</strong> or <strong>DA_Core_InteractionConfig</strong>.</li>
+</ul>
+<p>This newly created and named <strong>Interaction Data Asset</strong> will be the central hub for configuring interaction values and linking the necessary rendering classes for your inventory carousel.</p>
+<p>The <strong>Interaction Data Asset</strong> is now created and provides a set of sensible default values under the <strong>Interaction Data</strong> category:</p>
+<p><img alt="alt text" src="../assets/prt_7.png" /></p>
+<p>The screenshot displays the default settings for the <strong>Interaction Data Asset</strong>. While most properties are indeed self-explanatory—governing parameters like range and detection method—it is important to highlight the key takeaways for the user.</p>
+<pre><code>Detection Mode: Defines the method used to scan for interactable objects (e.g., based on the player's proximity).
+Interaction Distance: The maximum distance (in Unreal units) from which the player can trigger an interaction.
+Detection Frequency: How often (in seconds) the system checks for new interactable objects.
+Show Debug Raycasts: A useful setting for debugging the interaction system in development viewports. Recommended to disable in a shipped game.
+Detection Channel: Specifies the collision channel the system uses to filter and detect interactable objects.
+</code></pre>
+<p>The most critical element in this asset, specific to the carousel plugin, is the <strong>Inventory Scene</strong> property, found at the bottom of the details panel.</p>
+<ul>
+<li>
+<p><strong>Default Asset:</strong> By default, this field is populated with a placeholder or an example class, such as <strong><em>BP_InventoryScene</em></strong>, which is included in the plugin's content folder. This example asset contains the necessary <strong>Scene Capture Component</strong> used to render your items for the UI.</p>
+</li>
+<li>
+<p><strong>Customization:</strong> While the default works out of the box, advanced users have the option to <strong>override this value</strong> by creating and selecting a new, custom Scene Capture Blueprint class tailored to their project's visual needs. This process will be detailed in a later section of the documentation.</p>
+</li>
+</ul>
+<p><strong>Conclusion of Setup</strong></p>
+<p>With the InteractionDataAsset created and its default values reviewed, the core configuration for player interaction is complete. You can now proceed to link this Data Asset to your <strong>Interaction Manager Component</strong> and begin setting up the item-specific <strong>Inventory Data Assets</strong>.</p>
+<p><img alt="alt text" src="../assets/prt_8.png" /></p>
+<h2 id="4-configuring-the-inventory-data-asset"><strong>4. Configuring the Inventory Data Asset</strong></h2>
+<p><strong>Step 1: Creating the Asset</strong></p>
+<pre><code>1. Open the Content Browser.
+2. Right-Click anywhere in an empty area.
+3. Navigate to Miscellaneous.
+4. Select Data Asset.
+5. In the pop-up window, locate and select the Inventory Data Asset class.
+</code></pre>
+<p><strong>Step 2: Naming the Asset</strong></p>
+<p>Once the asset is created, you must rename it:</p>
+<ul>
+<li><strong>Rename:</strong> Give the asset a clear, recognizable name, such as <strong>DA_Flashlight</strong> or <strong>Flashlight_DataAsset</strong>.</li>
+</ul>
+<p><strong>Inventory Data Asset Configuration</strong></p>
+<p>The Inventory Data Asset serves as the core item blueprint for your game. As shown in the screenshot, most properties under Item Data are straightforward and relate to standard item management (e.g., names, messages, stack settings).</p>
+<p>This section will detail the essential configuration fields and provide a focused explanation of the crucial Offset properties, which control the item's visual presentation across different scenarios.</p>
+<p><img alt="alt text" src="../assets/prt_9.png" /></p>
+<p><strong>Core Item Properties</strong></p>
+<p>These properties define the basic identity and functionality of the item:</p>
+<ul>
+<li><strong>Item Name / Short / Long Description:</strong> Display names and text used in the UI and documentation. - Supports localization through the engine's text system.</li>
+<li><strong>Item Tag / Slot Tag:</strong> Unique identifiers used for programmatic lookups and specifying which carousel Slot this item belongs to. - Ensures the item appears in the correct section of the inventory carousel.</li>
+<li><strong>Action Messages:</strong> - Customizable text used for UI prompts (e.g., Collect Message, Use Message). - Define the user experience when interacting with or using the item.</li>
+<li><strong>Qtd to Add / Remove:</strong> - Defines the default quantity added or removed from the inventory upon interaction or use. - Essential for managing stackable items.</li>
+<li><strong>Is Stackable / Can be Examined:</strong> - Boolean flags controlling fundamental item behavior. - Can be Examined enables the dedicated inspection view, which uses the Inspec Offset property.</li>
+<li><strong>Rotation Speed:</strong> - Defines the pitch, yaw, and roll rotation rate of the item when the Rotate Item flag is active. - Often used for aesthetic flourish in the inventory view.</li>
+<li><strong>Item Mesh:</strong> - The static or skeletal mesh asset that represents this item in the game world and the inventory view. - This asset is required for the system to render the item.</li>
+</ul>
+<p><strong>Understanding Item Offsets (Transforms)</strong></p>
+<p>The Offset properties are crucial because they dictate the item's visual Transform (Position, Rotation, and Scale) in three different contexts. They all use the same structure to adjust the Item Mesh.</p>
+<ul>
+<li><strong>Local Offset:</strong> Inventory/Carousel View - Represents the Transform of the item as it is being rendered by the Scene Capture component for the inventory UI. Use this to position the item correctly inside the carousel viewer.</li>
+<li><strong>World Offset:</strong> Collectable/Pickup View - Represents the Transform of the item in the game world when it is placed as a collectable (pickup). Use this to adjust the appearance, rotation, and scale of the item in the 3D environment.</li>
+<li><strong>Inspec Offset:</strong> Inspection/Examination View - Represents the Transform of the item when the player initiates the detailed examination screen. Use this to set the optimal viewing position, rotation, and scale for player inspection.</li>
+</ul>
+<p>After configuring your individual <strong>Inventory Data Assets</strong> (the "nucleus" of each item), the next step is to catalog these items and introduce them to the carousel system. This crucial indexing is managed through a <strong>Data Table</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+  <footer class="md-footer">
+    <div class="md-footer-meta footer-flex">
+
+      <!-- Left copyright text -->
+      <p class="footer-left">
+        Copyright © 2025 Soup Stem – All rights reserved.
+
+      </p>
+
+      <!-- Right section (currently empty, reserved for future content) -->
+      <div class="footer-right"></div>
+
+    </div>
+  </footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
